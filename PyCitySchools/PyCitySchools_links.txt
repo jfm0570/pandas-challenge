@@ -1,0 +1,34 @@
+https://stackoverflow.com/questions/41534562/count-of-unique-values-in-pandas-dataframe-column
+https://stackoverflow.com/questions/15943769/how-do-i-get-the-row-count-of-a-pandas-dataframe
+https://stackoverflow.com/questions/22219004/how-to-group-dataframe-rows-into-list-in-pandas-groupby
+https://stackoverflow.com/questions/61964355/custom-sort-a-grouped-data-frame-in-python
+https://stackoverflow.com/questions/72599038/sorting-python-dictionary-based-on-keys-which-is-alphanumeric-values
+https://stackoverflow.com/questions/37787698/how-to-sort-pandas-dataframe-from-one-column
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html
+
+Code that I tried but did not use:
+# school_students_passing_reading
+school_counts = per_school_counts.to_frame(name='student_count').reset_index()
+school_counts = school_counts.rename(columns={"index":'school_name'})
+per_school_summary = pd.merge(table_data3, school_counts,on='school_name')
+per_school_summary
+# school_students_passing_reading
+# school_counts
+
+# school_counts = per_school_counts.to_frame(name='student_count').reset_index()
+# school_budget = per_school_budget.to_frame(name='budget').reset_index()
+# school_capita = per_school_capita.to_frame(name='capita').reset_index()
+# avg_math_score = per_school_capita.to_frame(name='capita').reset_index()
+
+# data4 = {'school name': school_counts['index'],'Total Students':school_counts['student_count'], 'Total School Budget':school_budget['budget'], 
+#          'Per Student Budget':school_capita['capita']}
+# data4
+# data4 = {'Total Students':[school_counts], 'Total School Budget':[per_school_capita], 
+#          'Average Math Score':[per_school_math], 'Average Reading Score':[per_school_reading],
+#          '% Passing Math':[school_students_passing_math ], '% Passing Reading':[school_students_passing_reading],
+#          'Overall Passing':[overall_passing_rate]}
+
+
+# per_school_summary = pd.DataFrame(data=data4)
+# per_school_summary
+# school_counts
